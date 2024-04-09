@@ -1,0 +1,40 @@
+.scroll {
+  margin-top: 60px;
+  justify-content: space-around;
+}
+
+.scroll .cv_border {
+  border: 1px solid black;
+  width: 150%;
+  height: 30px;
+  border-radius: 10px 10px 10px 10px;
+  background-color: var(--blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.scroll .cv_border a {
+  color: #fff;
+  font-size: 16px;
+}
+.scroll .cv_border a span {
+  margin-left: 3px;
+}
+
+.scroll .scroll_icon_border {
+  border-right: 2px solid var(--blue);
+  font-size: 10px;
+  width: 150%;
+  height: 50px;
+  justify-content: end;
+}
+.scroll .scroll_icon_border p {
+  margin-left: 2px;
+  margin-right: 4px;
+}
+@media (max-width: 700px) {
+  .cv_border {
+    position: relative;
+    right: 30px;
+  }
+}

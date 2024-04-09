@@ -1,0 +1,74 @@
+.Home {
+  margin-top: 200px;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  flex: 3;
+  margin-right: 70px;
+}
+.Home .myimage img {
+  height: 270px;
+  width: 270px;
+}
+.name {
+  position: relative;
+  left: 60px;
+  flex: 3;
+}
+.name p {
+  font-size: 10px;
+  color: var(--blue);
+  margin-top: 3px;
+}
+.name p span {
+  margin-left: 30px;
+}
+.name h1 {
+  font-size: 30px;
+  color: rgb(0, 0, 15);
+  font-weight: 200;
+  line-height: 0.9;
+}
+.aboutme {
+  flex: 3;
+}
+.aboutme p {
+  font-size: 10px;
+  color: var(--blue);
+  position: relative;
+  left: -190px;
+}
+.aboutme span {
+  font-size: 10px;
+  color: rgb(45, 67, 68);
+  text-align: center;
+  position: relative;
+  right: 20px;
+}
+.aboutme h1 {
+  font-size: 30px;
+  color: rgb(0, 0, 15);
+  font-weight: 200;
+  line-height: 0.8;
+}
+@media (max-width: 700px) {
+  .Home {
+    display: block;
+    margin-top: 100px;
+  }
+  .Home .myimage img {
+    height: 150px;
+    width: 150px;
+    position: relative;
+    left: 30px;
+  }
+  .aboutme {
+    display: none;
+  }
+  .name {
+    margin-bottom: 50px;
+    width: 100%;
+    position: relative;
+    left: 20px;
+  }
+}
