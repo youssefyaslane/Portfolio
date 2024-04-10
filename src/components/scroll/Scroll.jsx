@@ -6,23 +6,12 @@ export default function Scroll() {
   // Lien vers votre CV PDF
   const cvUrl = "/Portfolio/public/youssef_yaslane_cv.pdf";
 
-  const handleDownload = () => {
-    // Créez un élément <a> temporaire pour déclencher le téléchargement
-    const link = document.createElement("a");
-    link.href = cvUrl;
-    link.download = "youssef_cv.pdf";
-    document.body.appendChild(link);
-    link.click();
-    // Supprimez l'élément <a> temporaire après le téléchargement
-    document.body.removeChild(link);
-  };
-
   return (
     <section className="scroll flex">
       <div className="cv">
         <div className="cv_border">
-          {/* Ajoutez onClick pour déclencher le téléchargement */}
-          <a href={cvUrl} onClick={handleDownload}>
+          {/* Utilisez l'attribut download pour télécharger le fichier au lieu de onClick */}
+          <a href={cvUrl} download="youssef_cv.pdf">
             Resume
             <span>
               <FontAwesomeIcon icon={faFilePdf} />
