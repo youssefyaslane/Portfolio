@@ -4,7 +4,7 @@ import "./Scroll.css";
 
 export default function Scroll() {
   // Lien vers votre CV PDF
-  const cvUrl = "/Portfolio/public/youssef_yaslane_cv .pdf";
+  const cvUrl = "youssef_yaslane_cv .pdf";
 
   return (
     <section className="scroll flex">
